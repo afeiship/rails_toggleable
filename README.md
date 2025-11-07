@@ -1,6 +1,28 @@
-# rails-module-links
+# RailsToggleable
+Short description and motivation.
 
+## Usage
+How to use my plugin.
 
-## resources
-- https://medium.com/@ebifurai_tsn/active-storage-after-rails-5-2-26ad89c93b57
-- https://afreshcup.com/home/2017/07/23/activestorage-samples
+## Installation
+Add this line to your application's Gemfile:
+
+```ruby
+gem "rails_toggleable"
+```
+
+And then execute:
+```bash
+$ bundle
+```
+
+Or install it yourself as:
+```bash
+$ gem install rails_toggleable
+```
+
+## Contributing
+Contribution directions go here.
+
+## License
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
