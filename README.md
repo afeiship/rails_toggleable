@@ -2,7 +2,10 @@
 > A Rails plugin for configurable boolean toggle fields with dynamic methods like enable_*, disable_*, toggle_*. 
 
 ## Usage
-How to use my plugin.
+```sh
+rails generate toggleable_field active --model User
+rails generate toggleable_field published --model Post
+```
 
 ## Installation
 Add this line to your application's Gemfile:

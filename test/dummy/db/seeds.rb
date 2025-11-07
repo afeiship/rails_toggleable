@@ -27,31 +27,26 @@ posts_data = [
     title: "Introduction to Rails",
     content: "Rails is a powerful web application framework...",
     published: true,
-    user: User.find_by!(email: "alice@example.com")
   },
   {
     title: "Advanced Ruby Techniques",
     content: "Exploring metaprogramming and other advanced features...",
     published: false,
-    user: User.find_by!(email: "bob@example.com")
   },
   {
     title: "Building APIs with Rails",
     content: "Creating robust and scalable APIs...",
     published: true,
-    user: User.find_by!(email: "charlie@example.com")
   },
   {
     title: "Rails Security Best Practices",
     content: "Protecting your application from common vulnerabilities...",
     published: true,
-    user: User.find_by!(email: "diana@example.com")
   },
   {
     title: "Testing Rails Applications",
     content: "Writing effective unit, integration, and system tests...",
     published: false,
-    user: User.find_by!(email: "ethan@example.com")
   }
 ]
 
@@ -59,9 +54,8 @@ posts_data.each do |post_attrs|
   post = Post.find_or_create_by!(title: post_attrs[:title]) do |p|
     p.content = post_attrs[:content]
     p.published = post_attrs[:published]
-    p.user = post_attrs[:user] # 假设 Post 有一个 user 关联
   end
-  puts "Created/Found Post: '#{post.title}' (Published: #{post.published?}) by #{post.user.name}"
+  puts "Created/Found Post: '#{post.title}' (Published: #{post.published?})"
 end
 
 puts "\nSeeding completed!"
