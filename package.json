@@ -1,0 +1,15 @@
+{
+  "name": "rails_toggleable",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Rails plugin for configurable boolean toggle fields with dynamic methods like enable_*, disable_*, toggle_*.",
+  "keywords": [],
+  "author": "afeiship",
+  "scripts": {
+    "dev": "cd test/dummy && rails server",
+    "clean": "rm -rf *.gem",
+    "build": "gem build *.gemspec",
+    "pubpush": "gem push *.gem",
+    "release": "release-it"
+  }
+}
