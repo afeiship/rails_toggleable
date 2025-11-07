@@ -6,10 +6,10 @@ module RailsToggleable
   class Engine < ::Rails::Engine
     isolate_namespace RailsToggleable
 
-    # 将 ToggleableModelMethods 混入 ActiveRecord::Base
+    # 将 ToggleableModelMethods 混入 ActiveRecord::Base 的实例
     initializer "rails_toggleable.active_record" do
       ActiveSupport.on_load :active_record do
-        extend RailsToggleable::ToggleableModelMethods
+        include RailsToggleable::ToggleableModelMethods
       end
     end
   end
