@@ -1,5 +1,5 @@
-# RailsToggleable
-Short description and motivation.
+# rails_toggleable
+> A Rails plugin for configurable boolean toggle fields with dynamic methods like enable_*, disable_*, toggle_*. 
 
 ## Usage
 How to use my plugin.
