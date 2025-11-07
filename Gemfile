@@ -17,4 +17,5 @@ gem "rubocop-rails-omakase", require: false
 
 group :development do
   gem 'awesome_print'
+  gem 'pry-rails'
 end
